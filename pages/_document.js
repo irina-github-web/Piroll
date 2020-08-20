@@ -9,6 +9,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
             rel="stylesheet"
           />
+          {/* <link rel="stylesheet" href="/_next/static/style.css" /> */}
         </Head>
         <body>
           <Main />

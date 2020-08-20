@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export function MainLayout({ children, title = "Piroll" }) {
   return (
-    <>
+    <div className="container">
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -27,7 +27,9 @@ export function MainLayout({ children, title = "Piroll" }) {
         </Link>
       </nav>
 
-      <main>{children}</main>
-    </>
+      <main>
+        {children}
+      </main>
+    </div>
   );
 }
