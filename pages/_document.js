@@ -6,8 +6,13 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
             rel="stylesheet"
+          />
+          <link
+            rel="icon"
+            type="image/x-icon"
+            href={require("../public/favicon.ico")}
           />
           {/* <link rel="stylesheet" href="/_next/static/style.css" /> */}
         </Head>
