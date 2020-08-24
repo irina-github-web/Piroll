@@ -132,6 +132,25 @@ ul {
   padding: 165px 0;
 }
 
+.skills__line {
+  width: inherit;
+}
+
+.skills__line-label {
+  text-transform: uppercase;
+}
+
+.skills__line-outer {
+  max-width: 500px;
+  height: 3px;
+  display: flex;
+  background: #d8d8d8;
+}
+
+.skills__line-inner {
+  background: var(--marin);
+}
+
 /* Numbers Block */
 
 #number {
@@ -148,6 +167,27 @@ ul {
 .numbers__item {
   display: flex;
   align-items: center;
+  text-transform: uppercase;
+}
+
+.numbers__content {
+  margin-left: 20px;
+}
+
+.numbers__content .numbers__num {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.numbers__content .numbers__text {
+  font-size: 13px;
+}
+
+.numbers__item svg {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
 }
 
 /* Works Block */
@@ -160,17 +200,51 @@ ul {
 .works__item {
   flex-basis: 25%;
   flex-grow: 1;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .works__item img {
-	width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.works__item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: #00000087;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 6.404c-5.847 0-10.404 3.66-15.994 9.593 4.816 5.073 8.857 9.6 15.994 9.6s12.382-5.73 15.994-9.492c-3.697-4.407-8.943-9.7-15.994-9.7zM16 24.53c-6.336 0-10.16-3.929-14.524-8.532 5.192-5.414 9.32-8.527 14.524-8.527 6.161 0 10.975 4.443 14.558 8.591-3.523 3.674-8.293 8.469-14.558 8.469z' fill='%23fff'%3E%3C/path%3E%3Cpath d='M16 9.603c-3.528 0-6.398 2.87-6.398 6.397s2.87 6.397 6.398 6.397 6.398-2.87 6.398-6.397-2.87-6.397-6.398-6.397zM16 21.331c-2.939 0-5.331-2.391-5.331-5.331s2.392-5.331 5.331-5.331 5.331 2.391 5.331 5.331c0 2.939-2.392 5.331-5.331 5.331z' fill='%23fff'%3E%3C/path%3E%3Cpath d='M16 12.268c-2.058 0-3.732 1.674-3.732 3.732s1.674 3.732 3.732 3.732c2.058 0 3.732-1.674 3.732-3.732s-1.674-3.732-3.732-3.732zM16 18.666c-1.47 0-2.666-1.196-2.666-2.666s1.196-2.666 2.666-2.666 2.666 1.196 2.666 2.666c0 1.47-1.196 2.666-2.666 2.666z' fill='%23fff'%3E%3C/path%3E%3C/svg%3E");
+  background-position: center;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+
+.works__item:hover:after {
+  opacity: 1;
+}
+
+.thumb {
+  transition: 0.3s;
+}
+
+.works__item:hover .thumb {
+  transform: scale(1.2);
 }
 
 .works__btn {
-	text-align: center;
-	display: block;
-	padding: 45px 0;
-	text-decoration: none;
-	text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 45px 0;
+  text-decoration: none;
+  text-transform: uppercase;
 }
+
+
