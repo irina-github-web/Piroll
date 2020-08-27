@@ -1,14 +1,14 @@
 const SKILLS_LIST = [
   {
-    label: "UI/UX Design - 75%",
+    label: "UI/UX Design",
     percentage: "75%",
   },
   {
-    label: "web development - 90%",
+    label: "web development",
     percentage: "90%",
   },
   {
-    label: "marketing - 65%",
+    label: "marketing",
     percentage: "65%",
   },
 ];
@@ -22,7 +22,7 @@ const ProgressLine = ({ label, percentage }) => {
 
   return (
     <div className="skills__line">
-      <span className="skills__line-label">{label}</span>
+      <div className="skills__line-label">{label}<span>{percentage}</span></div>
       <div className="skills__line-outer">
         <div
           className="skills__line-inner"

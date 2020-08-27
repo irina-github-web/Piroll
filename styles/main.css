@@ -23,6 +23,26 @@ ul {
   margin: 0 auto;
 }
 
+.title {
+  text-align: center;
+}
+
+a {
+  transition: 0.3s;
+}
+
+a:hover,
+a:active,
+a:focus,
+a.active {
+  color: var(--marin);
+  text-decoration: none;
+}
+
+:focus {
+  outline: var(--marin) auto 1px;
+}
+
 /* Header & Nav */
 
 .header {
@@ -60,11 +80,11 @@ ul {
 
 /* Welcome Block */
 
-#welcome {
+.welcome {
   background: url(../images/mainblock-bg.jpg) no-repeat bottom / cover;
 }
 
-#welcome .wrapper {
+.welcome .wrapper {
   display: flex;
   justify-content: flex-end;
 }
@@ -111,7 +131,7 @@ ul {
 
 /* About Block */
 
-#about {
+.about {
   padding: 100px 0;
   text-align: center;
 }
@@ -119,25 +139,37 @@ ul {
 .about__text {
   max-width: 715px;
   margin: 40px auto;
+  text-align: center;
 }
 
 /* Skills Block */
 
-#skills {
+.skills {
   background: url(../images/skills.jpg) right no-repeat #f9f9f9;
   background-size: 50%;
 }
 
-#skills .wrapper {
-  padding: 165px 0;
+.skills .wrapper {
+  padding: 165px 15px;
+}
+
+.skills__title {
+  text-align-last: left;
 }
 
 .skills__line {
   width: inherit;
+  margin-top: 40px;
 }
 
 .skills__line-label {
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.skills__line-label span {
+  margin-left: 20px;
 }
 
 .skills__line-outer {
@@ -145,6 +177,7 @@ ul {
   height: 3px;
   display: flex;
   background: #d8d8d8;
+  margin-top: 20px;
 }
 
 .skills__line-inner {
@@ -153,7 +186,7 @@ ul {
 
 /* Numbers Block */
 
-#number {
+.numbers {
   padding: 100px 0;
   background-color: var(--marin);
   color: #fff;
@@ -243,8 +276,121 @@ ul {
   text-align: center;
   display: block;
   padding: 45px 0;
+  background-color: #f5f5f5;
+  font-size: 13px;
   text-decoration: none;
   text-transform: uppercase;
+  color: #8e8e8e;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
+/* Work Process Block */
 
+.process {
+  padding: 100px 0;
+}
+
+.process__video {
+  position: relative;
+}
+
+.process__img {
+  display: flex;
+  margin: auto;
+  position: relative;
+}
+.video-btn {
+  position: absolute;
+  color: white;
+  background-color: var(--marin);
+  border: 2px solid var(--marin);
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  margin: auto;
+  top: 243px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.video-btn:hover {
+  background-color: transparent;
+}
+
+/* Work Types Block */
+
+.wtypes {
+  padding: 40px 0 100px 0;
+  background-color: #f5f5f5;
+}
+
+.wtypes__list {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap: 30px;
+  align-items: baseline;
+  text-align: center;
+}
+
+.wtypes__item {
+  padding-top: 60px;
+}
+
+.wtypes__title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 25px 0 20px 0;
+}
+
+.wtypes__text {
+  color: var(--gray);
+  font-size: 14px;
+  height: 24px;
+}
+
+.wtypes__icon svg {
+  fill: #656565;
+  height: 43px;
+}
+
+/* Reviews Slider Block */
+
+.revslider {
+  background-color: var(--marin);
+  padding: 173px 0 60px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.revslider .wrapper {
+  max-width: 824px;
+}
+
+.slider__arrows {
+  display: none;
+}
+
+.slider__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__item .slide__text {
+  font-size: 22px;
+}
+
+.slider__item .author {
+  display: block;
+  margin: 40px 0 100px 0;
+  text-transform: uppercase;
+  font-size: 13px;
+}
