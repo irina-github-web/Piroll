@@ -30,16 +30,16 @@ export default function Header(props) {
           <Link href="about">
             <a>About</a>
           </Link>
-          <Link href="#">
+          <Link href="#works">
             <a>Work</a>
           </Link>
-          <Link href="#">
+          <Link href="#process">
             <a>Process</a>
           </Link>
-          <Link href="#">
+          <Link href="#wtypes">
             <a>Services</a>
           </Link>
-          <Link href="#">
+          <Link href="#revslider">
             <a>Testimonials</a>
           </Link>
           <Link href="contacts">
