@@ -11,7 +11,7 @@ export default function Index() {
       <section id="welcome" className="welcome">
         <div className="wrapper">
           <div className="welcome__content">
-            <h1 className="welcome__title">We design end develop</h1>
+            <h1 className="animate__animated animate__bounce welcome__title">We design end develop</h1>
             <p className="welcome__text">
               We are a new design studio based in USA. We have over 20 years of
               combined experience, and know a thing or two about designing

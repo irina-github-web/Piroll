@@ -1,5 +1,6 @@
 @import "./variables.css";
 @import "./responsive.css";
+@import "../node_modules/animate.css/";
 
 html {
   scroll-behavior: smooth;
@@ -46,6 +47,10 @@ a.active {
 :focus,
 button:focus {
   outline: var(--marin) auto 1px;
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
 }
 
 /* Header & Nav */
@@ -460,6 +465,10 @@ button:focus {
   font: 400 15px "Montserrat", sans-serif;
 }
 
+.form textarea {
+  resize: none;
+}
+
 .form input::placeholder {
   color: #707070;
 }
@@ -483,4 +492,30 @@ button:focus {
   max-width: 180px;
   font-size: 12px;
   margin: auto;
+}
+
+/* Footer */
+
+.footer {
+  padding: 100px 0;
+  background-color: #141414;
+}
+
+.footer,
+.footer a {
+  color: #fff;
+}
+
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__col2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menus__list {
+  column-count: 2;
 }
