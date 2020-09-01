@@ -2,13 +2,13 @@ export default function Footer() {
   return (
     <section id="footer" className="footer">
       <div className="wrapper">
-        <div className="col-5 footer__col1">
+        <div className="col-lg-5 col-md-4 col-sm-3 footer__col1">
           <div className="comp_name">Piroll Design, Inc.</div>
           <div className="copyright">
             © 2017 Piroll. All rights reserved.<br /> Designed by robirurk.
           </div>
         </div>
-        <div className="col-7 footer__col2">
+        <div className="col-lg-7 col-md-8 col-sm-9 footer__col2">
           <div className="conts">
             <ul className="conts__list">
               <li className="conts__item">

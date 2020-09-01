@@ -1,5 +1,4 @@
 @import "./variables.css";
-@import "./responsive.css";
 @import "../node_modules/animate.css/";
 
 html {
@@ -156,7 +155,7 @@ button:focus {
 
 .skills {
   background: url(../images/skills.jpg) right no-repeat #f9f9f9;
-  background-size: 50%;
+  background-size: 53%;
 }
 
 .skills .wrapper {
@@ -306,6 +305,7 @@ button:focus {
 }
 
 .process__img {
+  max-width: 100%;
   display: flex;
   margin: auto;
   position: relative;
@@ -503,19 +503,120 @@ button:focus {
 
 .footer,
 .footer a {
+  color: var(--foot_color);
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.footer a:hover {
   color: #fff;
 }
 
 .footer .wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__col1 .comp_name {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.footer__col1 .copyright {
+  font-size: 15px;
 }
 
 .footer__col2 {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__col2 .conts__item:first-of-type {
+  margin-bottom: 5px;
 }
 
 .menus__list {
   column-count: 2;
+  column-gap: 50px;
+}
+
+/* About page */
+
+.amelia {
+  padding: 120px 0;
+  background: url(../images/about-me.jpg) no-repeat;
+  background-position-x: center;
+  background-position-y: 45%;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.amelia::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #141414;
+  opacity: 0.6;
+}
+
+.amelia__title,
+.amelia__about {
+  position: relative;
+  z-index: 5;
+  max-width: 525px;
+  margin: 0 auto;
+}
+
+.amelia__title {
+  margin-bottom: 40px;
+}
+
+.aboutme {
+  background-color: #f6f6f6;
+  display: flex;
+}
+
+.aboutme .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutme .about__title {
+  padding-top: 140px;
+}
+
+.aboutme .about__title,
+.aboutme .about__text {
+  text-align: left;
+  margin: 40px 0;
+}
+
+.aboutme .about__sign {
+  margin-bottom: 140px;
+}
+
+.aboutme__img {
+  /* background: url(../images/about-me-2.jpg) no-repeat left; 
+  background-size: 75%;
+  background-position-x: -43%; */
+  margin-left: -15%;
+  margin-right: 15%;
+}
+
+.aboutme__img img {
+  height: 100%;
+}
+
+.prbtn {
+  padding: 100px 0;
+  background-color: #fff;
 }

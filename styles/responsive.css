@@ -1,9 +1,18 @@
-@media (max-width:768px) {
-	.works__item {
-	  flex-basis:100%;
-	  
-	}
-	.works__item:nth-of-type(2) {
-	  order:-1;
-	}
+@media (max-width: 768px) {
+  .works__item {
+    flex-basis: 50%;
   }
+  .works__item:nth-of-type(2) {
+    order: -1;
+  }
+}
+
+@media (max-width: 650px) {
+  .works__item {
+    flex-basis: 100%;
+  }
+
+  .footer__col1 {
+	  margin-bottom: 50px;
+  }
+}
