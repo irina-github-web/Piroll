@@ -1,6 +1,21 @@
 import Link from "next/link";
+import { useEffect } from 'react';
 
 export default function Header(props) {
+
+  useEffect(() => {
+    const script = document.createElement('script');
+  
+    script.src = "./ActiveItem.js";
+    script.async = true;
+  
+    document.body.appendChild(script);
+  
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+ 
   return (
     <header className="header">
       <div className="wrapper">
@@ -11,7 +26,7 @@ export default function Header(props) {
             </a>
           </Link>
         </div>
-        <nav className="header__nav">
+        <nav className="navigation header__nav">
           <Link href="/">
             <a className="active">Home</a>
           </Link>
