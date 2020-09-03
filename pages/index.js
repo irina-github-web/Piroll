@@ -2,7 +2,7 @@ import Link from "next/link";
 import { MainLayout } from "../components/MainLayout";
 import { Skills } from "../components/Skills";
 import MySlider from "../components/slider/MySlider";
-import Form from "../components/Form";
+import Form from "../components/form/Form";
 import { Numbers } from "../components/Numbers";
 
 export default function Index() {

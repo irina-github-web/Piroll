@@ -1,5 +1,5 @@
 import { MainLayout } from "../components/MainLayout";
-import Form from "../components/Form";
+import Form from "../components/form/Form";
 
 export default function Contacts() {
   return (
