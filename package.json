@@ -19,6 +19,7 @@
     "react-dom": "16.13.1",
     "react-elastic-carousel": "^0.7.4",
     "reactstrap": "^8.5.1",
+    "simple-react-lightbox": "^3.3.4-1",
     "styled-components": "^5.1.1"
   }
 }

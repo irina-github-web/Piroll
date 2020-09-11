@@ -95,7 +95,14 @@ export default class Form extends Component {
       email: "",
       title: "",
       message: "",
+      sended: true
     });
+
+    this.formSuccess();
+  };
+
+  formSuccess = () => {
+      alert("Form submitted!");
   };
 
   render() {
@@ -160,6 +167,7 @@ export default class Form extends Component {
           type="submit"
           className="welcome__link submit-btn"
           disabled={!this.state.formValid}
+          onClick={this.formSuccess}
         >
           Send Message
         </button>

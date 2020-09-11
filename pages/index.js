@@ -4,6 +4,8 @@ import { Skills } from "../components/Skills";
 import MySlider from "../components/slider/MySlider";
 import Form from "../components/form/Form";
 import { Numbers } from "../components/Numbers";
+import SimpleReactLightbox from "simple-react-lightbox";
+import GalleryWithApi from "../components/gallery/GalleryWithApi";
 
 export default function Index() {
   return (
@@ -11,7 +13,7 @@ export default function Index() {
       <section id="welcome" className="welcome">
         <div className="wrapper">
           <div className="welcome__content">
-            <h1 className="animate__animated animate__bounce welcome__title">We design end develop</h1>
+            <h1 className="welcome__title">We design end develop</h1>
             <p className="welcome__text">
               We are a new design studio based in USA. We have over 20 years of
               combined experience, and know a thing or two about designing
@@ -50,7 +52,10 @@ export default function Index() {
       <Numbers />
 
       <section id="works" className="works">
-        <div className="works__list">
+        <SimpleReactLightbox>
+          <GalleryWithApi />
+        </SimpleReactLightbox>
+        {/* <div className="works__list">
           <div className="works__item">
             <a href="#">
               <img src={require("../images/work-1.jpg")} className="thumb" />
@@ -77,7 +82,7 @@ export default function Index() {
           <div className="works__item">
             <img className="thumb" src={require("../images/work-8.jpg")} />
           </div>
-        </div>
+        </div> */}
         <a className="works__btn" href="#">
           Load more work
         </a>
